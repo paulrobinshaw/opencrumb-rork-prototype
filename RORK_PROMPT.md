@@ -24,7 +24,7 @@ The core emotional aha moment is:
 
 > My real recipe just became an organized, believable formula I might trust for my next bake.
 
-The app should feel calm, precise, warm, tactile, bakery-native, and Apple-quality. It should not feel like a generic AI wrapper, meal planner, recipe scrapbook, or SaaS dashboard.
+The app should feel calm, precise, legible, practical, and native to iPhone. It should not feel like a generic AI wrapper, meal planner, recipe scrapbook, or SaaS dashboard.
 
 ## Prototype target
 

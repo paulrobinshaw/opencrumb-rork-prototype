@@ -112,12 +112,11 @@ The app should feel:
 
 - calm
 - precise
-- warm
-- tactile
-- bakery-native
+- legible
+- practical
 - trustworthy
-- native Apple
-- practical rather than magical
+- native to iPhone
+- useful rather than decorative
 
 Avoid:
 
