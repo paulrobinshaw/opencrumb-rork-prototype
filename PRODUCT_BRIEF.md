@@ -2,7 +2,7 @@
 
 ## One-line description
 
-OpenCrumb turns bread recipes into scalable baker’s-percentage formulas serious bakers can trust.
+OpenCrumb extracts the formula behind trusted bread recipes so bakers can review the numbers and scale with confidence.
 
 ## Audience
 

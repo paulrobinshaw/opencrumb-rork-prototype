@@ -10,7 +10,7 @@ Before creating any formula card, read `MOCK_DATA.md`, `BBGA_FORMULA_FORMAT.md`,
 
 ## Product summary
 
-OpenCrumb turns messy bread recipes into organized, scalable baker’s-percentage formulas.
+OpenCrumb extracts the formula behind trusted bread recipes so bakers can review the numbers and scale with confidence.
 
 The target user is a serious home baker or small-batch baker who repeats doughs, scales recipes, uses preferments/levains/soakers, and wants numbers they can trust for the next bake.
 
@@ -53,7 +53,11 @@ Goal: Explain OpenCrumb in one breath.
 
 Suggested headline:
 
-> Turn bread recipes into formulas you can trust.
+> Extract the formula behind your trusted bread recipes.
+
+Suggested supporting line:
+
+> Review the numbers. Scale with confidence.
 
 Supporting bullets:
 

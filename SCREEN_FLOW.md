@@ -17,7 +17,11 @@ Purpose:
 
 Primary message:
 
-> Turn bread recipes into formulas you can trust.
+> Extract the formula behind your trusted bread recipes.
+
+Supporting message:
+
+> Review the numbers. Scale with confidence.
 
 Primary CTA:
 
