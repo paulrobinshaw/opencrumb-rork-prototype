@@ -39,15 +39,41 @@ The aha moment is:
 
 ## What to build / revise
 
-Create or revise the first-session preview so one glance communicates:
+Create or revise the first view / first-session preview so one glance communicates:
 
 ```text
-written recipe excerpt → extracted structure/checks → professional formula rows
+web recipe page → Recipe Found → formula preview
 ```
 
-This should be a compact, native SwiftUI, infographic-like transformation surface.
+This should be a compact, native SwiftUI, infographic-like transformation surface that can sit on the promise screen itself.
 
 Do **not** show only a finished formula card dumped on screen. The user needs to see why the result is trustworthy.
+
+## First-view hierarchy that must be enforced
+
+The first view should not open with a generic carousel, empty state, or finished formula card.
+
+Use this order:
+
+1. Compact `OpenCrumb` identity.
+2. Exact hero tagline:
+
+   > Extract the formula behind your trusted bread recipes.
+
+3. Exact supporting line:
+
+   > Review the numbers. Scale with confidence.
+
+4. The animated transformation card loop described below.
+5. One compact trust line, for example:
+
+   > Source quantities stay visible before you save.
+
+6. Primary CTA:
+
+   > Import Your Recipe
+
+The tagline and supporting line are not optional decoration. They must be visible above the fold and must not be replaced by vaguer copy like “Bring baker’s maths to your recipes.”
 
 ## Visual direction
 
@@ -68,10 +94,12 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - can share the same ragged/torn bottom edge treatment if it reinforces the “glimpse” idea
 
 3. **Transition / overlay idea**
-   - the website recipe card should visually transition into the formula card
+   - run the overlay in a restrained timed loop, not as a one-off static mock
+   - suggested loop: web page / recipe text settles in → real `Recipe Found` chip appears → formula preview resolves in-place → animated transition back to the web page state → repeat
    - use a crossfade, vertical wipe, peel/reveal, or stacked overlay where the formula appears in-place over the original recipe text
    - avoid side-by-side comparison if it makes the screen feel like a diagram; the stronger idea is **same card, transformed**
    - keep motion restrained and Apple-like
+   - the loop can later grow to include camera/import states, but for now keep the first loop focused on web page → recipe found → formula preview
 
 4. **Detection layer**
    - use the real OpenCrumb browser detection chip styling, not a newly invented mock chip
@@ -89,6 +117,11 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - background can use a restrained warm-to-cream gradient, but avoid glossy SaaS glassmorphism
    - formula rows or summary chips may use very light gradient/tint accents for hierarchy
    - keep contrast and legibility high; gradients must never reduce readability of formula numbers
+
+6. **Ragged bottom edge**
+   - make the bottom torn-paper edge slightly bolder and more intentionally jagged than a tiny decorative ripple
+   - it should read as a clipped glimpse from a longer web recipe page
+   - keep it tasteful and paper-like, not cartoonish or Halloween-style
 
 ## Trust copy that must be visible
 

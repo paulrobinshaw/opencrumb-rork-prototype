@@ -6,40 +6,51 @@
 Promise → Start with a recipe → Browser/detection → Formula preview → Save → Scale / Paywall
 ```
 
-## 1. Promise
+## 1. Promise / first view
 
 Purpose:
 
 - orient the user quickly
 - communicate the product in one breath
 - avoid a cold empty state
-- set up that the first preview is a glimpse of recipe prose becoming a formula, not a generic onboarding card
+- set up that the first preview is a timed glimpse of a web recipe becoming a formula, not a generic onboarding card
 
-Primary message:
+This is the first view a user sees. Use this exact order:
+
+1. Compact `OpenCrumb` identity.
+2. Primary message:
 
 > Extract the formula behind your trusted bread recipes.
 
-Supporting message:
+3. Supporting message:
 
 > Review the numbers. Scale with confidence.
 
-Primary CTA:
+4. Animated transformation card loop:
 
-> Import a Recipe
+```text
+web page / recipe text → Recipe Found chip → formula preview → transition back → repeat
+```
 
-Secondary CTA:
+The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a clipped web recipe page. The formula state should resolve in-place over the same card footprint. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page.
+
+5. Compact trust line:
+
+> Source quantities stay visible before you save.
+
+6. Primary CTA:
+
+> Import Your Recipe
+
+Secondary CTA, only if it does not compete:
 
 > Try a Sample Formula
 
-Trust line:
+Trust alternative if space is tight:
 
 > No account. Your formulas stay on this iPhone.
 
-Promise screen should hint at the transformation to come:
-
-> From recipe prose to baker’s formula.
-
-Trust should be introduced up front, not delayed until after import.
+The hero tagline and supporting line are mandatory and should remain visible above the fold. Do not substitute weaker tagline copy.
 
 ## 2. Start with a real recipe
 

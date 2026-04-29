@@ -49,33 +49,44 @@ Prioritize:
 
 ## Screen 1 — Promise
 
-Goal: Explain OpenCrumb in one breath.
+Goal: Explain OpenCrumb in one breath and immediately show the import-to-formula promise.
 
-Suggested headline:
+This is the first view a user sees. It must not be a generic marketing carousel or empty state.
+
+Enforced vertical order:
+
+1. Compact `OpenCrumb` identity.
+2. Exact headline:
 
 > Extract the formula behind your trusted bread recipes.
 
-Suggested supporting line:
+3. Exact supporting line:
 
 > Review the numbers. Scale with confidence.
 
-Supporting bullets:
+4. Animated transformation card loop:
 
-- Import a recipe
-- Check the baker’s percentages
-- Scale the dough with confidence
+```text
+web recipe page / recipe text → Recipe Found chip → formula preview → transition back → repeat
+```
 
-Primary CTA:
+5. One compact trust line:
 
-> Import a Recipe
+> Source quantities stay visible before you save.
 
-Secondary CTA:
+6. Primary CTA:
+
+> Import Your Recipe
+
+Secondary CTA, only if there is room and it does not compete:
 
 > Try a Sample Formula
 
-Trust line:
+Trust line alternative:
 
 > No account. Your formulas stay on this iPhone.
+
+The hero tagline and supporting line are mandatory. Do not replace them with softer or vaguer copy such as “Bring baker’s maths to your recipes.”
 
 ## Screen 2 — Start with a real recipe
 
@@ -158,14 +169,17 @@ Suggested microcopy for this transformation surface:
 Visual metaphor direction:
 
 - use two same-size cards occupying the same footprint: a website recipe-text card and a formula card
+- run the same-footprint cards as a restrained timed loop, not a static before/after graphic
+- the loop should read: web page / recipe text settles in → real `Recipe Found` chip appears → formula preview resolves in-place → animated transition back to the web page state → repeat
 - the website card transitions into the formula card in-place using a restrained crossfade, wipe, peel, or overlay reveal
 - the cards should feel exactly aligned, not like two unrelated panels
-- the bottom edge can be subtly ragged / torn-paper style so the user reads it as a glimpse from a longer recipe document
+- the bottom edge should be slightly bolder and more intentionally jagged / torn-paper style so the user reads it as a clipped glimpse from a longer recipe document; keep it tasteful and paper-like, not cartoonish
 - use the real OpenCrumb `DSRecipeDetectedChip` styling rather than inventing a new chip: `Recipe Found`, `checkmark.circle.fill`, white text/icon, `Color.ocSuccess` (`#16A34A`) capsule, soft shadow
 - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed
-- left/top state: clipped recipe text excerpt from a real bread recipe with source quantities visible
+- source state: clipped web page / recipe text excerpt from a real bread recipe with source quantities visible
 - transformed state: clean formula rows with weights and baker's percentages
 - add tasteful depth: soft card drop shadows, a gentle warm paper gradient, and subtle background gradients are encouraged if they improve polish without reducing legibility
+- the loop can later include camera/paste/import variants, but do not broaden the current first view unless explicitly asked
 
 Avoid:
 
