@@ -13,6 +13,7 @@ Purpose:
 - orient the user quickly
 - communicate the product in one breath
 - avoid a cold empty state
+- set up that the first preview is a glimpse of recipe prose becoming a formula, not a generic onboarding card
 
 Primary message:
 
@@ -29,6 +30,12 @@ Secondary CTA:
 Trust line:
 
 > No account. Your formulas stay on this iPhone.
+
+Promise screen should hint at the transformation to come:
+
+> From recipe prose to baker’s formula.
+
+Trust should be introduced up front, not delayed until after import.
 
 ## 2. Start with a real recipe
 
@@ -69,6 +76,7 @@ Purpose:
 - deliver the aha moment
 - prove that the messy recipe has become a usable structure
 - show enough math and stages to build trust
+- present a glimpse of conversion, not just a completed formula card
 
 Must feel:
 
@@ -76,11 +84,21 @@ Must feel:
 
 Important:
 
+- first-session preview should use a compact infographic-like transformation surface
+- show recipe excerpt → extracted structure → formula rows
+- preserve source quantities so the math feels checkable
 - show baker’s percentages
 - show hydration
 - show stage structure
 - show uncertainty honestly
 - never show fabricated `0g` component rows
+- include trust language in the preview itself: review before saving, unclear amounts are flagged, no account, no tracking, stays on iPhone
+
+Avoid:
+
+- dumping a finished formula card on screen with no visible conversion story
+- replacing the visual proof with generic feature bullets
+- AI-magic framing or fake certainty
 
 ## 5. Saved formula
 

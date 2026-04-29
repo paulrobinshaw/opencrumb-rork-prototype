@@ -123,6 +123,49 @@ This is the most important screen.
 
 It should show the imported recipe transformed into a structured baking formula.
 
+### Critical first-session direction: this must be a glimpse, not a dumped card
+
+Do not make the first preview feel like a finished formula card dropped onto the screen with supporting copy underneath. The first-session visual should communicate, at a glance, that OpenCrumb took written bread-recipe prose and turned it into a professional baker's formula the user can review.
+
+Use a compact infographic-like transformation surface, native to SwiftUI and calm in tone:
+
+- written recipe excerpt
+- extracted structure / parsing checks
+- professional formula rows
+
+Think:
+
+> written recipe -> extracted structure -> professional formula
+
+The formula table is still the eventual hero, but the onboarding aha should visually show the conversion from prose to formula, not just the end state.
+
+This should feel like a glimpse of the promise, not a full workflow lecture. One glance should communicate:
+
+> My recipe prose became a structured formula I can verify.
+
+Suggested microcopy for this transformation surface:
+
+- From recipe prose to baker's formula
+- Source quantities stay visible
+- Review every number before saving
+- Unclear amounts are flagged, not guessed
+- No account. No tracking. Your formulas stay on this iPhone.
+
+Visual metaphor direction:
+
+- left side or top: clipped recipe text excerpt from a real bread recipe
+- middle: subtle extraction, mapping, or check states
+- right side or bottom: clean formula rows with weights and baker's percentages
+
+Avoid:
+
+- a full-screen formula card with no visible source context
+- generic feature bullets replacing the actual preview
+- hype language about AI
+- chat UI
+- neon sparkle / magic-wand visuals
+- implying the app autogenerates perfect math without review
+
 Must show:
 
 - recipe/formula title
@@ -146,6 +189,18 @@ Never show fabricated certainty. If the parser does not know a component quantit
 The preview should feel like:
 
 > This is my recipe, but clearer.
+
+Trust must be visible in the preview itself, not relegated to secondary marketing copy. The screen should explicitly reinforce:
+
+- review before saving
+- source quantities retained
+- uncertainty flagged instead of guessed
+- math is checkable
+- no account
+- local-first / stays on this iPhone
+- no tracking
+
+Use serious-baker language. This is not "AI magic." It is recipe interpretation presented with restraint and checkable math.
 
 Primary CTA:
 

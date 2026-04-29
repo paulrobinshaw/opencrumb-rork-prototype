@@ -8,7 +8,7 @@ Use this repo to prototype:
 
 - first-run onboarding
 - browser recipe detection
-- import-to-formula preview
+- import-to-formula preview, especially the first-session glimpse of recipe prose becoming a trustworthy formula
 - formula detail polish
 - scaling UI concepts
 - paywall timing and copy
