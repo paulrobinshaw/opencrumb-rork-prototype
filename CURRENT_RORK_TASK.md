@@ -99,14 +99,28 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - visually the payoff, but still connected to the source
    - can share the same ragged/torn bottom edge treatment if it reinforces the “glimpse” idea
 
-3. **Transition / overlay idea**
+3. **Transition / overlay choreography**
    - run the overlay in a restrained timed loop, not as a one-off static mock
-   - suggested loop: web page / recipe text settles in → source quantities highlight in sequence (`200g flour`, then `200g water`, then `800g flour`) → real `Recipe Found` chip appears → formula preview resolves in-place → animated transition back to the web page state → repeat
-   - the quantity highlights should feel like OpenCrumb is finding the ingredients in the source page before resolving the formula; use restrained warm highlight marks, not neon scan effects
-   - use a crossfade, vertical wipe, peel/reveal, or stacked overlay where the formula appears in-place over the original recipe text
+   - this is a traceability animation: the user should see source quantities being found, held, and moved into the formula, not a magic card swap
+   - exact loop:
+     1. credible web recipe page settles in
+     2. `200g flour` highlights with a punchy highlight transition
+     3. `200g water` highlights with the same rhythm
+     4. `800g flour` highlights with the same rhythm
+     5. real green `Recipe Found` chip pops in after the highlights
+     6. `Recipe Found` chip disappears
+     7. the website/article layer fades, peels, or wipes away, but the highlighted quantities/words remain visible
+     8. formula structure transitions in around the retained highlights at roughly a 50/50 midpoint, so source and formula briefly coexist
+     9. the highlighted quantities/words move into their matching formula positions
+     10. formula preview settles, with a short residual glow/pulse on the landed values if useful
+     11. transition back to the website state and repeat
+   - use a highlight color that pops clearly against the web page — warm gold/amber/highlighter yellow is preferred — but avoid neon AI scan effects
+   - the rhythm should feel deliberate: highlight, highlight, highlight, then green chip confirmation
+   - the moving values should preserve meaning: `200g flour` lands in the levain flour row, `200g water` lands in the levain water row, and `800g flour` lands in the final flour row
+   - use a crossfade, vertical wipe, peel/reveal, matched-geometry movement, or stacked overlay where the formula appears in-place over the original recipe text
    - avoid side-by-side comparison if it makes the screen feel like a diagram; the stronger idea is **same card, transformed**
    - keep motion restrained and Apple-like
-   - the loop can later grow to include camera/import states, but for now keep the first loop focused on web page → recipe found → formula preview
+   - the loop can later grow to include camera/import states, but for now keep the first loop focused on source quantities → recipe found → formula placement
 
 4. **Detection layer**
    - use the real OpenCrumb browser detection chip styling, not a newly invented mock chip
