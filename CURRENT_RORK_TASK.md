@@ -74,10 +74,21 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - keep motion restrained and Apple-like
 
 4. **Detection layer**
-   - add a green chip near the source card: `Recipe found`
-   - include a subtle pretend pointer/cursor/tap indicator aimed at the detected recipe area or the `Preview Formula` action
-   - examples of understated extraction states: “flour found”, “water found”, “levain stage detected”, “review needed”
+   - use the real OpenCrumb browser detection chip styling, not a newly invented mock chip
+   - production reference: `DSRecipeDetectedChip` in `OpenCrumb/Shared/DesignSystem/Components/DSRecipeDetectedChip.swift`
+   - match the real chip semantics: `Recipe Found`, `checkmark.circle.fill`, white text/icon, capsule filled with OpenCrumb success green (`Color.ocSuccess` / `#16A34A`), horizontal padding around `.ocSpace5`, vertical padding around `.ocSpace3`, and a soft shadow similar to `Color.black.opacity(0.25), radius: 8, y: 4`
+   - if the source recipe title is shown in the chip, use the real two-line style: small `Recipe Found` label over the recipe title; otherwise use the single-line chip
+   - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed — the real detection chip already carries the affordance
+   - examples of understated extraction states, if shown elsewhere: “flour found”, “water found”, “levain stage detected”, “review needed”
    - no AI magic language
+
+5. **Depth and finish**
+   - use tasteful drop shadows and subtle gradients; they are cheap and effective here
+   - recipe/formula card should have a soft raised-paper shadow so it feels physically lifted from the page
+   - use a gentle warm paper gradient on the card surface rather than flat white if it improves the editorial feel
+   - background can use a restrained warm-to-cream gradient, but avoid glossy SaaS glassmorphism
+   - formula rows or summary chips may use very light gradient/tint accents for hierarchy
+   - keep contrast and legibility high; gradients must never reduce readability of formula numbers
 
 ## Trust copy that must be visible
 

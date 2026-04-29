@@ -161,10 +161,11 @@ Visual metaphor direction:
 - the website card transitions into the formula card in-place using a restrained crossfade, wipe, peel, or overlay reveal
 - the cards should feel exactly aligned, not like two unrelated panels
 - the bottom edge can be subtly ragged / torn-paper style so the user reads it as a glimpse from a longer recipe document
-- add a green `Recipe found` chip near the source recipe card
-- include a subtle pretend pointer/cursor/tap indicator aimed at the detected recipe area or preview action
+- use the real OpenCrumb `DSRecipeDetectedChip` styling rather than inventing a new chip: `Recipe Found`, `checkmark.circle.fill`, white text/icon, `Color.ocSuccess` (`#16A34A`) capsule, soft shadow
+- no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed
 - left/top state: clipped recipe text excerpt from a real bread recipe with source quantities visible
 - transformed state: clean formula rows with weights and baker's percentages
+- add tasteful depth: soft card drop shadows, a gentle warm paper gradient, and subtle background gradients are encouraged if they improve polish without reducing legibility
 
 Avoid:
 
@@ -173,6 +174,7 @@ Avoid:
 - hype language about AI
 - chat UI
 - neon sparkle / magic-wand visuals
+- glossy SaaS glassmorphism or gradients that overpower the baking-paper feel
 - implying the app autogenerates perfect math without review
 
 Must show:
