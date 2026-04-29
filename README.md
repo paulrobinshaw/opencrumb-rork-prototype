@@ -16,6 +16,8 @@ Use this repo to prototype:
 
 Do **not** use this repo for production implementation, data models, import parsing, StoreKit, SwiftData migrations, AIProxy/Gemini configuration, or tested formula math.
 
+Before creating any formula preview, read [`BBGA_FORMULA_FORMAT.md`](BBGA_FORMULA_FORMAT.md) and [`MOCK_DATA.md`](MOCK_DATA.md). Visible formula cards must be mathematically consistent and should follow the professional split between Overall Formula, Levain Build, and Final Dough.
+
 ## Product summary
 
 OpenCrumb turns messy bread recipes into organized, scalable baker’s-percentage formulas.
@@ -44,6 +46,7 @@ If Rork asks for repo access, this repo is safe to use because it contains only 
 - [`RORK_PROMPT.md`](RORK_PROMPT.md) — pasteable prompt for Rork Max
 - [`GUARDRAILS.md`](GUARDRAILS.md) — what Rork should and should not touch
 - [`MOCK_DATA.md`](MOCK_DATA.md) — sample formula/import data for prototype screens
+- [`BBGA_FORMULA_FORMAT.md`](BBGA_FORMULA_FORMAT.md) — BBGA-style/professional formula layout rules
 - [`SCREEN_FLOW.md`](SCREEN_FLOW.md) — target first-run and aha flow
 
 ## Source of truth warning

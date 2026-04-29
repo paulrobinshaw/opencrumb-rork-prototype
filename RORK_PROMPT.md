@@ -6,6 +6,8 @@ Please create a polished, native-feeling SwiftUI prototype / implementation dire
 
 Use this repo as prototype context only. Do not assume this is the production app. Use mock data and prototype screens.
 
+Before creating any formula card, read `MOCK_DATA.md` and `BBGA_FORMULA_FORMAT.md`. Formula cards must be mathematically correct: one baker’s percentage basis, no mixed stage-relative percentages, no double-counting levain, and no fake precision.
+
 ## Product summary
 
 OpenCrumb turns messy bread recipes into organized, scalable baker’s-percentage formulas.
