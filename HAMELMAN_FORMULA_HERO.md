@@ -84,12 +84,12 @@ Total dough    1,800g     —
 
 ### Levain Build
 
-Percentages still use total-flour basis in the compact preview.
+Levain Build uses build-relative percentages. For this 100% hydration levain, bread flour is 100% and water is 100% within the build.
 
 ```text
 LEVAIN BUILD
-Bread flour      200g    20%
-Water            200g    20%
+Bread flour      200g   100%
+Water            200g   100%
 Levain total     400g     —
 ```
 
@@ -173,7 +173,7 @@ Never show:
 Total dough 1,840g
 Levain flour 100g 100%
 All levain with a baker’s %
-Mixed total-flour and stage-relative percentages
+Final Dough percentages
 ```
 
 Always make the basis explicit:

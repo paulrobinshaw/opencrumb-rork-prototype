@@ -6,7 +6,7 @@ Please create a polished, native-feeling SwiftUI prototype / implementation dire
 
 Use this repo as prototype context only. Do not assume this is the production app. Use mock data and prototype screens.
 
-Before creating any formula card, read `MOCK_DATA.md`, `BBGA_FORMULA_FORMAT.md`, and `HAMELMAN_FORMULA_HERO.md`. Formula cards must be mathematically correct: one baker’s percentage basis, no mixed stage-relative percentages, no double-counting levain, and no fake precision. The formula table should be the hero, not a small decorative proof card.
+Before creating any formula card, read `MOCK_DATA.md`, `BBGA_FORMULA_FORMAT.md`, and `HAMELMAN_FORMULA_HERO.md`. Formula cards must be mathematically correct: Overall Formula uses total-flour baker’s %, Levain Build uses clearly labelled build %, Final Dough uses weights only, no double-counting levain, and no fake precision. The formula table should be the hero, not a small decorative proof card.
 
 ## Product summary
 

@@ -21,7 +21,7 @@ Ready to review as a formula
 
 Use this exact sample unless deliberately replacing it with another fully checked formula.
 
-All baker’s percentages below are based on **total flour = 1,000g**. Do not mix total-flour percentages with stage-relative percentages in the same card.
+The Overall Formula uses total-flour baker’s percentages. The Levain Build uses clearly labelled build-relative percentages. The Final Dough uses weights only.
 
 Title:
 
@@ -50,14 +50,14 @@ Prefermented flour = 200 ÷ 1,000 = 20%
 
 ## Stages
 
-### Levain
+### Levain Build
 
-Percentages here still use the **overall total-flour basis**, not stage-relative basis.
+Levain Build uses **build-relative percentages**. In this 100% hydration levain, levain flour is 100% and levain water is 100%.
 
-| Ingredient | Quantity | Baker % | Note |
+| Ingredient | Quantity | Build % | Note |
 |---|---:|---:|---|
-| Bread flour | 200g | 20% | prefermented flour |
-| Water | 200g | 20% | levain water |
+| Bread flour | 200g | 100% | levain flour; 20% of total formula flour |
+| Water | 200g | 100% | levain water |
 | Levain total | 400g | — | prepared component total |
 
 ### Final Dough
@@ -82,9 +82,9 @@ Final dough rows show **weights only**. Do not show baker’s percentages in the
 
 ## Display rules for formula cards
 
-- Use **one percentage basis** per card: Overall Formula percentages are based on total flour.
+- Label percentage bases clearly: Overall Formula uses total-flour baker’s %, while Levain Build uses build-relative %.
 - Do not show baker’s percentages in the Final Dough section; final dough is a mixing/build section with weights only.
-- Do not show `100%` on levain flour unless the UI explicitly says `stage-relative`.
+- Levain Build may use `100%` on levain flour and water when the column is clearly labelled `Build %`.
 - Composite rows such as `Levain total` and `All levain` show grams only, not baker’s %.
 - Do not show `0g` for unknown component quantities.
 - Do not show `1,840g` for this sample.
