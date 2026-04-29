@@ -80,10 +80,16 @@ Use this exact sample for prototype cards unless replacing it with another check
 
 | Ingredient | Quantity | Baker % |
 |---|---:|---:|
-| Total flour | 1,000g | 100% |
-| Total water | 780g | 78% |
+| Flour | 1,000g | 100% |
+| Water | 780g | 78% |
 | Salt | 20g | 2.0% |
-| Total dough | 1,800g | — |
+| Total dough | 1,800g | 180% |
+
+The total dough percentage should be shown because it expresses yield from flour:
+
+```text
+100% flour + 78% water + 2% salt = 180% total dough
+```
 
 Top metrics:
 
@@ -96,13 +102,13 @@ Total dough: 1,800g
 
 ### Levain Build
 
-Levain Build uses **build-relative percentages**, as in a professional formula. The percentage of prefermented flour belongs in the Overall Formula summary; the levain build itself shows its own flour as 100%.
+Levain Build uses **build-relative percentages**, as in a professional formula. The percentage of prefermented flour belongs in the Overall Formula summary; the levain build itself shows its own flour as 100%. In this sample, 100% flour + 100% water = 200% levain total.
 
 | Ingredient | Quantity | Build % | Note |
 |---|---:|---:|---|
-| Bread flour | 200g | 100% | levain flour; 20% of total formula flour |
+| Flour | 200g | 100% | levain flour; 20% of total formula flour |
 | Water | 200g | 100% | 100% hydration levain |
-| Levain total | 400g | — | component total |
+| Levain total | 400g | 200% | component total |
 
 ### Final Dough
 
@@ -110,7 +116,7 @@ Final dough is the mixing/build section. Show weights only here; do **not** show
 
 | Ingredient | Quantity | Note |
 |---|---:|---|
-| Bread flour | 800g | final flour |
+| Flour | 800g | final flour |
 | Water | 580g | final water |
 | Salt | 20g | salt |
 | All levain | 400g | prepared component |
@@ -132,16 +138,17 @@ Overall Formula is where total-flour baker’s percentages belong:
 
 ```text
 OVERALL FORMULA
-Flour 1,000g 100%
-Water   780g  78%
-Salt     20g 2.0%
+Flour        1,000g 100%
+Water          780g  78%
+Salt            20g 2.0%
+Total dough  1,800g 180%
 ```
 
 The Final Dough section should show weights only:
 
 ```text
 FINAL DOUGH
-Bread flour 800g
+Flour 800g
 Water       580g
 Salt         20g
 All levain  400g
@@ -151,13 +158,18 @@ Levain Build may use build-relative percentages if the column is labelled `Build
 
 Do **not** put baker’s percentages in Final Dough rows. That makes the display look like it is mixing formula percentage logic with mixing-stage instructions.
 
-### Rule 2 — component totals usually have no baker’s %
+### Rule 2 — totals and component rows
 
-These rows should show weight only:
+Levain Build total should show its build total percentage:
 
 ```text
-Levain total 400g —
-All levain 400g —
+Levain total 400g 200%
+```
+
+`All levain` in Final Dough is a prepared component added to the bowl. It should show weight only, with no percentage:
+
+```text
+All levain 400g
 ```
 
 Do not invent a baker’s percentage for `All levain` in a compact preview.

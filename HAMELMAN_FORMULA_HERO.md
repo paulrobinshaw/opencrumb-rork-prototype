@@ -74,23 +74,25 @@ Total flour basis: 1,000g = 100%
 
 ### Overall Formula
 
+Show the total dough percentage. This is the yield from flour: 100% flour + 78% water + 2% salt = 180% total dough.
+
 ```text
 OVERALL FORMULA
 Flour          1,000g   100%
 Water            780g    78%
 Salt              20g   2.0%
-Total dough    1,800g     —
+Total dough    1,800g   180%
 ```
 
 ### Levain Build
 
-Levain Build uses build-relative percentages. For this 100% hydration levain, bread flour is 100% and water is 100% within the build.
+Levain Build uses build-relative percentages. For this 100% hydration levain, flour is 100%, water is 100%, and levain total is 200%.
 
 ```text
 LEVAIN BUILD
-Bread flour      200g   100%
+Flour      200g   100%
 Water            200g   100%
-Levain total     400g     —
+Levain total     400g   200%
 ```
 
 ### Final Dough
@@ -99,7 +101,7 @@ Final dough should be weights only. Do not show baker’s percentages in this se
 
 ```text
 FINAL DOUGH
-Bread flour      800g
+Flour      800g
 Water            580g
 Salt              20g
 All levain       400g
@@ -172,7 +174,7 @@ Never show:
 ```text
 Total dough 1,840g
 Levain flour 100g 100%
-All levain with a baker’s %
+All levain with a baker’s % in Final Dough
 Final Dough percentages
 ```
 

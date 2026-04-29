@@ -33,8 +33,8 @@ Summary:
 
 ```text
 Total dough: 1,800g
-Total flour: 1,000g / 100%
-Total water: 780g / 78%
+Flour: 1,000g / 100%
+Water: 780g / 78%
 Salt: 20g / 2.0%
 Prefermented flour: 200g / 20%
 ```
@@ -52,13 +52,13 @@ Prefermented flour = 200 ÷ 1,000 = 20%
 
 ### Levain Build
 
-Levain Build uses **build-relative percentages**. In this 100% hydration levain, levain flour is 100% and levain water is 100%.
+Levain Build uses **build-relative percentages**. In this 100% hydration levain, levain flour is 100%, levain water is 100%, and levain total is 200%.
 
 | Ingredient | Quantity | Build % | Note |
 |---|---:|---:|---|
-| Bread flour | 200g | 100% | levain flour; 20% of total formula flour |
+| Flour | 200g | 100% | levain flour; 20% of total formula flour |
 | Water | 200g | 100% | levain water |
-| Levain total | 400g | — | prepared component total |
+| Levain total | 400g | 200% | prepared component total |
 
 ### Final Dough
 
@@ -66,26 +66,26 @@ Final dough rows show **weights only**. Do not show baker’s percentages in the
 
 | Ingredient | Quantity | Note |
 |---|---:|---|
-| Bread flour | 800g | final flour |
+| Flour | 800g | final flour |
 | Water | 580g | final water |
 | Salt | 20g | salt |
 | All levain | 400g | prepared component |
 
-### Overall totals
+### Total
 
 | Total | Quantity | Baker % |
 |---|---:|---:|
-| Total flour | 1,000g | 100% |
-| Total water | 780g | 78% |
-| Total salt | 20g | 2.0% |
-| Total dough | 1,800g | — |
+| Flour | 1,000g | 100% |
+| Water | 780g | 78% |
+| Salt | 20g | 2.0% |
+| Total dough | 1,800g | 180% |
 
 ## Display rules for formula cards
 
 - Label percentage bases clearly: Overall Formula uses total-flour baker’s %, while Levain Build uses build-relative %.
 - Do not show baker’s percentages in the Final Dough section; final dough is a mixing/build section with weights only.
 - Levain Build may use `100%` on levain flour and water when the column is clearly labelled `Build %`.
-- Composite rows such as `Levain total` and `All levain` show grams only, not baker’s %.
+- Levain total shows its build total percentage (`200%` in this sample). `All levain` in Final Dough shows weight only, no percentage.
 - Do not show `0g` for unknown component quantities.
 - Do not show `1,840g` for this sample.
 - Do not include starter seed/inoculation unless its flour/water contribution is explicitly modeled.
