@@ -42,7 +42,7 @@ The aha moment is:
 Create or revise the first view / first-session preview so one glance communicates:
 
 ```text
-web recipe page → Recipe Found → formula preview
+web recipe page → source quantity highlights → formula preview
 ```
 
 This should be a compact, native SwiftUI, infographic-like transformation surface that can sit on the promise screen itself.
@@ -101,36 +101,36 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
 
 3. **Transition / overlay choreography**
    - run the overlay in a restrained timed loop, not as a one-off static mock
-   - this is a traceability animation: the user should see source quantities being found, held, and moved into the formula, not a magic card swap
+   - this is a traceability animation: the user should see source quantities being found, held, moved into the formula, and then used to reveal derived formula numbers one by one
+   - remove the green `Recipe Found` chip from this first-view animation completely; the source highlights and formula placement now do the trust work
    - exact loop:
      1. credible web recipe page settles in
      2. `200g flour` highlights with a punchy highlight transition
      3. `200g water` highlights with the same rhythm
      4. `800g flour` highlights with the same rhythm
-     5. real green `Recipe Found` chip pops in after the highlights
-     6. `Recipe Found` chip disappears
+     5. `580g water` highlights with the same rhythm
+     6. `20g salt` highlights with the same rhythm
      7. the website/article layer fades, peels, or wipes away, but the highlighted quantities/words remain visible
      8. formula structure transitions in around the retained highlights at roughly a 50/50 midpoint, so source and formula briefly coexist
      9. the highlighted quantities/words move into their matching formula positions
-     10. formula preview settles, with a short residual glow/pulse on the landed values if useful
-     11. transition back to the website state and repeat
+     10. as values land, derived formula numbers appear one by one: total flour `1,000g`, total water `780g`, hydration `78%`, salt `2%`, and total dough `1,800g`
+     11. formula preview settles, with a short residual glow/pulse on the landed and derived values if useful
+     12. transition back to the website state and repeat
    - use a highlight color that pops clearly against the web page — warm gold/amber/highlighter yellow is preferred — but avoid neon AI scan effects
-   - the rhythm should feel deliberate: highlight, highlight, highlight, then green chip confirmation
-   - the moving values should preserve meaning: `200g flour` lands in the levain flour row, `200g water` lands in the levain water row, and `800g flour` lands in the final flour row
+   - the rhythm should feel deliberate: highlight, highlight, highlight, highlight, highlight, then formula reveal
+   - the moving values should preserve meaning: `200g flour` lands in the levain flour row, `200g water` lands in the levain water row, `800g flour` lands in the final flour row, `580g water` lands in the final water row, and `20g salt` lands in the salt row
+   - derived values should appear as a consequence of the source values landing, not before: `1,000g flour = 200g + 800g`, `780g water = 200g + 580g`, hydration `78% = 780 / 1,000`, salt `2% = 20 / 1,000`, total dough `1,800g = 1,000 + 780 + 20`
    - use a crossfade, vertical wipe, peel/reveal, matched-geometry movement, or stacked overlay where the formula appears in-place over the original recipe text
    - avoid side-by-side comparison if it makes the screen feel like a diagram; the stronger idea is **same card, transformed**
    - keep motion restrained and Apple-like
-   - the loop can later grow to include camera/import states, but for now keep the first loop focused on source quantities → recipe found → formula placement
+   - the loop can later grow to include camera/import states, but for now keep the first loop focused on source quantities → formula placement → derived numbers
 
 4. **Detection layer**
-   - use the real OpenCrumb browser detection chip styling, not a newly invented mock chip
-   - production reference: `DSRecipeDetectedChip` in `OpenCrumb/Shared/DesignSystem/Components/DSRecipeDetectedChip.swift`
-   - match the real chip semantics: `Recipe Found`, `checkmark.circle.fill`, white text/icon, capsule filled with OpenCrumb success green (`Color.ocSuccess` / `#16A34A`), horizontal padding around `.ocSpace5`, vertical padding around `.ocSpace3`, and a soft shadow similar to `Color.black.opacity(0.25), radius: 8, y: 4`
-   - if the source recipe title is shown in the chip, use the real two-line style: small `Recipe Found` label over the recipe title; otherwise use the single-line chip
-   - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed — the real detection chip already carries the affordance
-   - the chip should behave as an overlay badge, not as reserved layout space inside the card; do not leave a blank band where the chip used to be after it moves or fades
-   - when the chip is not visible, article/formula content should use the available vertical space naturally
-   - examples of understated extraction states, if shown elsewhere: “flour found”, “water found”, “levain stage detected”, “review needed”
+   - do not show the green `Recipe Found` chip in the first-view animation; remove it completely from this loop
+   - the source quantity highlights and formula placement now provide the detection/traceability story
+   - do not reserve chip space, and do not leave blank whitespace where the chip used to sit
+   - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed
+   - the real production `DSRecipeDetectedChip` can still be used elsewhere in the actual browser detection flow, but not in this first-view hero animation
    - no AI magic language
 
 5. **Depth and finish**

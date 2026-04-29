@@ -67,7 +67,7 @@ Enforced vertical order:
 4. Animated transformation card loop:
 
 ```text
-web recipe page / recipe text → Recipe Found chip → formula preview → transition back → repeat
+web recipe page / recipe text → source quantity highlights → formula preview → transition back → repeat
 ```
 
 5. One compact trust line:
@@ -170,25 +170,26 @@ Visual metaphor direction:
 
 - use two same-size cards occupying the same footprint: a website recipe-text card and a formula card
 - run the same-footprint cards as a restrained timed loop, not a static before/after graphic
-- this is a traceability animation, not a magic card swap: source quantities should be highlighted, held, and visibly moved into their formula positions
+- remove the green `Recipe Found` chip from this first-view animation completely; source highlights and formula placement now carry the trust story
+- this is a traceability animation, not a magic card swap: source quantities should be highlighted, held, visibly moved into their formula positions, then used to reveal derived formula numbers one by one
 - exact loop:
   1. credible web recipe page settles in
   2. `200g flour` highlights with a punchy warm highlight transition
   3. `200g water` highlights with the same rhythm
   4. `800g flour` highlights with the same rhythm
-  5. real green `Recipe Found` chip pops in after the highlights
-  6. `Recipe Found` chip disappears
+  5. `580g water` highlights with the same rhythm
+  6. `20g salt` highlights with the same rhythm
   7. website/article layer fades, peels, or wipes away while the highlighted quantities/words remain visible
   8. formula structure transitions in around those retained highlights at roughly a 50/50 midpoint
-  9. highlighted quantities/words move into their matching formula positions: `200g flour` to levain flour, `200g water` to levain water, `800g flour` to final flour
-  10. formula preview settles, optionally with a short residual glow/pulse on landed values
-  11. transition back to web page state and repeat
+  9. highlighted quantities/words move into their matching formula positions: `200g flour` to levain flour, `200g water` to levain water, `800g flour` to final flour, `580g water` to final water, `20g salt` to salt
+  10. derived numbers appear one by one as the source values land: total flour `1,000g`, total water `780g`, hydration `78%`, salt `2%`, total dough `1,800g`
+  11. formula preview settles, optionally with a short residual glow/pulse on landed and derived values
+  12. transition back to web page state and repeat
 - use a highlight color that pops clearly against the website mock — warm gold/amber/highlighter yellow is preferred — but avoid neon AI scan effects
 - the website card transitions into the formula card in-place using a restrained crossfade, wipe, peel, or overlay reveal
 - the cards should feel exactly aligned, not like two unrelated panels
 - the bottom edge should be slightly bolder and more intentionally jagged / torn-paper style so the user reads it as a clipped glimpse from a longer recipe document; keep it tasteful and paper-like, not cartoonish
-- use the real OpenCrumb `DSRecipeDetectedChip` styling rather than inventing a new chip: `Recipe Found`, `checkmark.circle.fill`, white text/icon, `Color.ocSuccess` (`#16A34A`) capsule, soft shadow
-- treat the `Recipe Found` chip as an overlay badge; do not reserve vertical layout space for it and do not leave blank whitespace where the chip used to be
+- do not use the green `Recipe Found` chip in the first-view hero animation; remove it completely from that loop
 - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed
 - source state: credible clipped website/article page from a bread recipe, with source domain, masthead/browser cue, title/dek, paragraphs, visible quantities, and optionally a subtle bread/crumb image or warm image block; make it feel like a real web page without adding busy browser chrome; visible quantity labels should use `flour`, not `bread flour`, for consistency with the formula
 - transformed state: clean formula rows with weights and baker's percentages; show more rows than a tiny summary and allow lower rows to spill/crop under the torn-paper edge so it feels like a longer formula worksheet continues below

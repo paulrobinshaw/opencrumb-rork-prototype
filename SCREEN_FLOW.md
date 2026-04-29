@@ -33,16 +33,17 @@ web page / recipe text
 → punchy highlight on 200g flour
 → punchy highlight on 200g water
 → punchy highlight on 800g flour
-→ green Recipe Found chip pops in
-→ Recipe Found chip disappears
+→ punchy highlight on 580g water
+→ punchy highlight on 20g salt
 → website/article layer disappears while highlighted quantities remain
 → formula appears around them at a 50/50 transition midpoint
 → highlighted quantities/words move into their matching formula rows
+→ derived numbers appear one by one as the highlighted values land
 → formula preview settles
 → transition back and repeat
 ```
 
-The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a credible clipped web recipe page, with light website/article cues and optionally a subtle bread image/background. Source quantities should highlight in sequence before the formula appears: `200g flour`, `200g water`, then `800g flour`. Use a highlight color that pops clearly — warm gold/amber/highlighter yellow preferred — with a deliberate rhythm: highlight, highlight, highlight, then green chip confirmation. After the chip disappears, the website/article layer should disappear while the highlighted quantities/words remain. The formula should then transition in around those retained highlights at roughly a 50/50 midpoint, and the highlighted quantities/words should move into their matching formula rows. Use `flour`, not `bread flour`, in the visible source/formula labels so the formula terminology stays consistent. The formula state should resolve in-place over the same card footprint, with enough rows to feel like a real worksheet and lower rows allowed to spill/crop beneath the torn edge. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page. The `Recipe Found` chip should be an overlay badge; never leave empty reserved whitespace where the chip used to sit.
+The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a credible clipped web recipe page, with light website/article cues and optionally a subtle bread image/background. Source quantities should highlight in sequence before the formula appears: `200g flour`, `200g water`, `800g flour`, `580g water`, then `20g salt`. Remove the green `Recipe Found` chip completely from this first-view animation. Use a highlight color that pops clearly — warm gold/amber/highlighter yellow preferred — with a deliberate rhythm. After the website/article layer disappears, the highlighted quantities/words should remain. The formula should then transition in around those retained highlights at roughly a 50/50 midpoint, and the highlighted quantities/words should move into their matching formula rows. As the highlighted source values land, derived numbers should appear one by one: total flour `1,000g`, total water `780g`, hydration `78%`, salt `2%`, and total dough `1,800g`. Use `flour`, not `bread flour`, in the visible source/formula labels so the formula terminology stays consistent. The formula state should resolve in-place over the same card footprint, with enough rows to feel like a real worksheet and lower rows allowed to spill/crop beneath the torn edge. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page. Never leave empty reserved whitespace where the chip used to sit.
 
 5. Compact trust line:
 
