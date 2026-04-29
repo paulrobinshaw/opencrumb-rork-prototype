@@ -95,12 +95,14 @@ Levain total     400g     —
 
 ### Final Dough
 
+Final dough should be weights only. Do not show baker’s percentages in this section.
+
 ```text
 FINAL DOUGH
-Bread flour      800g    80%
-Water            580g    58%
-Salt              20g   2.0%
-All levain       400g     —
+Bread flour      800g
+Water            580g
+Salt              20g
+All levain       400g
 ```
 
 ### Check line

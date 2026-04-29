@@ -106,12 +106,14 @@ Percentages below still use **overall total flour basis**, not stage-relative ba
 
 ### Final Dough
 
-| Ingredient | Quantity | Baker % | Note |
-|---|---:|---:|---|
-| Bread flour | 800g | 80% | final flour |
-| Water | 580g | 58% | final water |
-| Salt | 20g | 2.0% | salt |
-| All levain | 400g | — | prepared component |
+Final dough is the mixing/build section. Show weights only here; do **not** show baker’s percentages in the Final Dough table.
+
+| Ingredient | Quantity | Note |
+|---|---:|---|
+| Bread flour | 800g | final flour |
+| Water | 580g | final water |
+| Salt | 20g | salt |
+| All levain | 400g | prepared component |
 
 Check:
 
@@ -126,21 +128,26 @@ Total dough: 1,000g + 780g + 20g = 1,800g
 
 ### Rule 1 — one percentage basis per compact card
 
-Prefer total-flour basis everywhere:
+Overall Formula is where baker’s percentages belong:
 
 ```text
-Levain bread flour 200g 20%
-Final bread flour 800g 80%
+OVERALL FORMULA
+Flour 1,000g 100%
+Water   780g  78%
+Salt     20g 2.0%
 ```
 
-Do **not** show this in the same compact card unless explicitly labelled stage-relative:
+The Final Dough section should show weights only:
 
 ```text
-Levain bread flour 200g 100%
-Final bread flour 800g 80%
+FINAL DOUGH
+Bread flour 800g
+Water       580g
+Salt         20g
+All levain  400g
 ```
 
-That mixes bases and looks wrong to experienced bakers.
+Do **not** put baker’s percentages in Final Dough rows. That makes the display look like it is mixing formula percentage logic with mixing-stage instructions.
 
 ### Rule 2 — component totals usually have no baker’s %
 
@@ -188,6 +195,6 @@ A serious baker should be able to glance at the card and see:
 - prefermented flour percentage
 - levain/final dough split
 - no double-counting
-- no mixed percentage basis
+- no baker’s percentages in the Final Dough section
 
 If a card cannot show all of that clearly, simplify it rather than making up numbers.

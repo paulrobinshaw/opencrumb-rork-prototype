@@ -62,12 +62,14 @@ Percentages here still use the **overall total-flour basis**, not stage-relative
 
 ### Final Dough
 
-| Ingredient | Quantity | Baker % | Note |
-|---|---:|---:|---|
-| Bread flour | 800g | 80% | final flour |
-| Water | 580g | 58% | final water |
-| Salt | 20g | 2.0% | salt |
-| All levain | 400g | — | prepared component; no baker % |
+Final dough rows show **weights only**. Do not show baker’s percentages in the final dough section; the percentages belong in the Overall Formula.
+
+| Ingredient | Quantity | Note |
+|---|---:|---|
+| Bread flour | 800g | final flour |
+| Water | 580g | final water |
+| Salt | 20g | salt |
+| All levain | 400g | prepared component |
 
 ### Overall totals
 
@@ -80,7 +82,8 @@ Percentages here still use the **overall total-flour basis**, not stage-relative
 
 ## Display rules for formula cards
 
-- Use **one percentage basis** per card. Prefer total-flour basis.
+- Use **one percentage basis** per card: Overall Formula percentages are based on total flour.
+- Do not show baker’s percentages in the Final Dough section; final dough is a mixing/build section with weights only.
 - Do not show `100%` on levain flour unless the UI explicitly says `stage-relative`.
 - Composite rows such as `Levain total` and `All levain` show grams only, not baker’s %.
 - Do not show `0g` for unknown component quantities.
