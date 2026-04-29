@@ -17,7 +17,11 @@ Bread recipe found
 Ready to review as a formula
 ```
 
-## Formula preview
+## Formula preview — mathematically consistent
+
+Use this exact sample unless deliberately replacing it with another fully checked formula.
+
+All baker’s percentages below are based on **total flour = 1,000g**. Do not mix total-flour percentages with stage-relative percentages in the same card.
 
 Title:
 
@@ -28,32 +32,61 @@ Country Sourdough
 Summary:
 
 ```text
-Total dough: 1,840g
-Hydration: 78%
-Flour: 100%
-Salt: 2%
-Prefermented flour: 20%
+Total dough: 1,800g
+Total flour: 1,000g / 100%
+Total water: 780g / 78%
+Salt: 20g / 2.0%
+Prefermented flour: 200g / 20%
+```
+
+Math check:
+
+```text
+Total dough = 1,000g flour + 780g water + 20g salt = 1,800g
+Hydration = 780 ÷ 1,000 = 78%
+Salt = 20 ÷ 1,000 = 2.0%
+Prefermented flour = 200 ÷ 1,000 = 20%
 ```
 
 ## Stages
 
 ### Levain
 
+Percentages here still use the **overall total-flour basis**, not stage-relative basis.
+
 | Ingredient | Quantity | Baker % | Note |
 |---|---:|---:|---|
-| Bread flour | 100g | 100% | flour |
-| Water | 100g | 100% | hydration |
-| Starter | 20g | — | seed |
+| Bread flour | 200g | 20% | prefermented flour |
+| Water | 200g | 20% | levain water |
+| Levain total | 400g | — | prepared component total |
 
 ### Final Dough
 
 | Ingredient | Quantity | Baker % | Note |
 |---|---:|---:|---|
-| Bread flour | 800g | 80% | flour |
-| Whole wheat flour | 100g | 10% | flour |
-| Water | 620g | 62% | liquid |
-| Levain | all | — | prepared component |
-| Salt | 20g | 2% | salt |
+| Bread flour | 800g | 80% | final flour |
+| Water | 580g | 58% | final water |
+| Salt | 20g | 2.0% | salt |
+| All levain | 400g | — | prepared component; no baker % |
+
+### Overall totals
+
+| Total | Quantity | Baker % |
+|---|---:|---:|
+| Total flour | 1,000g | 100% |
+| Total water | 780g | 78% |
+| Total salt | 20g | 2.0% |
+| Total dough | 1,800g | — |
+
+## Display rules for formula cards
+
+- Use **one percentage basis** per card. Prefer total-flour basis.
+- Do not show `100%` on levain flour unless the UI explicitly says `stage-relative`.
+- Composite rows such as `Levain total` and `All levain` show grams only, not baker’s %.
+- Do not show `0g` for unknown component quantities.
+- Do not show `1,840g` for this sample.
+- Do not include starter seed/inoculation unless its flour/water contribution is explicitly modeled.
+- If a parser is uncertain, show an honest review note rather than fake precision.
 
 ## Scaling examples
 
