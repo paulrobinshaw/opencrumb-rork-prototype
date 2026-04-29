@@ -175,9 +175,10 @@ Visual metaphor direction:
 - the cards should feel exactly aligned, not like two unrelated panels
 - the bottom edge should be slightly bolder and more intentionally jagged / torn-paper style so the user reads it as a clipped glimpse from a longer recipe document; keep it tasteful and paper-like, not cartoonish
 - use the real OpenCrumb `DSRecipeDetectedChip` styling rather than inventing a new chip: `Recipe Found`, `checkmark.circle.fill`, white text/icon, `Color.ocSuccess` (`#16A34A`) capsule, soft shadow
+- treat the `Recipe Found` chip as an overlay badge; do not reserve vertical layout space for it and do not leave blank whitespace where the chip used to be
 - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed
-- source state: clipped web page / recipe text excerpt from a real bread recipe with source quantities visible
-- transformed state: clean formula rows with weights and baker's percentages
+- source state: credible clipped website/article page from a bread recipe, with source domain, masthead/browser cue, title/dek, paragraphs, visible quantities, and optionally a subtle bread/crumb image or warm image block; make it feel like a real web page without adding busy browser chrome
+- transformed state: clean formula rows with weights and baker's percentages; show more rows than a tiny summary and allow lower rows to spill/crop under the torn-paper edge so it feels like a longer formula worksheet continues below
 - add tasteful depth: soft card drop shadows, a gentle warm paper gradient, and subtle background gradients are encouraged if they improve polish without reducing legibility
 - the loop can later include camera/paste/import variants, but do not broaden the current first view unless explicitly asked
 

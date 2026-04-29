@@ -80,16 +80,21 @@ The tagline and supporting line are not optional decoration. They must be visibl
 Use a calm, serious-baker visual metaphor built around **two same-size cards occupying the same footprint**:
 
 1. **Website recipe card**
-   - looks like a clipped piece of written recipe text from a blog post
+   - looks like a credible clipped website recipe/article page, not a generic white text card
    - same width/height as the formula card
    - include source quantities visibly
    - should feel like the written document the baker started with
+   - use light website/article cues: source domain, tiny masthead/browser bar, serif article title, short dek, paragraphs, ingredient quantities, and optionally a subtle bread/crumb image or warm photo block
+   - improve realism without making the card busy; the user should read “real recipe page” instantly
    - bottom edge should be subtly ragged / torn-paper style so it feels like a glimpse from a longer page, not a complete document
 
 2. **Formula card**
    - same width/height as the website recipe card
    - aligned exactly over the same card footprint
    - clean formula rows with weights and baker’s percentages
+   - show enough rows that the formula feels like a real worksheet, not a tiny summary card
+   - allow lower formula rows to continue past / crop under the torn-paper bottom edge so it feels like there is more formula below the clipped page
+   - keep the top rows legible; only lower rows should be partially cut off
    - visually the payoff, but still connected to the source
    - can share the same ragged/torn bottom edge treatment if it reinforces the “glimpse” idea
 
@@ -107,6 +112,8 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - match the real chip semantics: `Recipe Found`, `checkmark.circle.fill`, white text/icon, capsule filled with OpenCrumb success green (`Color.ocSuccess` / `#16A34A`), horizontal padding around `.ocSpace5`, vertical padding around `.ocSpace3`, and a soft shadow similar to `Color.black.opacity(0.25), radius: 8, y: 4`
    - if the source recipe title is shown in the chip, use the real two-line style: small `Recipe Found` label over the recipe title; otherwise use the single-line chip
    - no extra `Tap to inspect`, pointer, cursor, or fake tap chip is needed — the real detection chip already carries the affordance
+   - the chip should behave as an overlay badge, not as reserved layout space inside the card; do not leave a blank band where the chip used to be after it moves or fades
+   - when the chip is not visible, article/formula content should use the available vertical space naturally
    - examples of understated extraction states, if shown elsewhere: “flour found”, “water found”, “levain stage detected”, “review needed”
    - no AI magic language
 

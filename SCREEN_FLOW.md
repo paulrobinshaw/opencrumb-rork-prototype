@@ -32,7 +32,7 @@ This is the first view a user sees. Use this exact order:
 web page / recipe text → Recipe Found chip → formula preview → transition back → repeat
 ```
 
-The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a clipped web recipe page. The formula state should resolve in-place over the same card footprint. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page.
+The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a credible clipped web recipe page, with light website/article cues and optionally a subtle bread image/background. The formula state should resolve in-place over the same card footprint, with enough rows to feel like a real worksheet and lower rows allowed to spill/crop beneath the torn edge. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page. The `Recipe Found` chip should be an overlay badge; never leave empty reserved whitespace where the chip used to sit.
 
 5. Compact trust line:
 
