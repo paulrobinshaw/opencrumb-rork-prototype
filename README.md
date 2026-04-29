@@ -49,6 +49,7 @@ If Rork asks for repo access, this repo is safe to use because it contains only 
 - [`BBGA_FORMULA_FORMAT.md`](BBGA_FORMULA_FORMAT.md) — BBGA-style/professional formula layout rules
 - [`HAMELMAN_FORMULA_HERO.md`](HAMELMAN_FORMULA_HERO.md) — formula-first hero layout guidance
 - [`SCREEN_FLOW.md`](SCREEN_FLOW.md) — target first-run and aha flow
+- [`RORK_WORKFLOW.md`](RORK_WORKFLOW.md) — recommended Hermes/Rork iteration workflow and prompt pattern
 
 ## Source of truth warning
 
