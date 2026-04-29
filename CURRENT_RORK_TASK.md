@@ -58,11 +58,11 @@ Use this order:
 1. Compact `OpenCrumb` identity.
 2. Exact hero tagline:
 
-   > Extract the formula behind your trusted bread recipes.
+   > See the formula behind your bread recipes.
 
 3. Exact supporting line:
 
-   > Review the numbers. Scale with confidence.
+   > Trust the numbers and scale with confidence.
 
 4. The animated transformation card loop described below.
 5. One compact trust line, for example:

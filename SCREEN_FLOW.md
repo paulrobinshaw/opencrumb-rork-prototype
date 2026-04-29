@@ -20,11 +20,11 @@ This is the first view a user sees. Use this exact order:
 1. Compact `OpenCrumb` identity.
 2. Primary message:
 
-> Extract the formula behind your trusted bread recipes.
+> See the formula behind your bread recipes.
 
 3. Supporting message:
 
-> Review the numbers. Scale with confidence.
+> Trust the numbers and scale with confidence.
 
 4. Animated transformation card loop:
 

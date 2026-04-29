@@ -58,11 +58,11 @@ Enforced vertical order:
 1. Compact `OpenCrumb` identity.
 2. Exact headline:
 
-> Extract the formula behind your trusted bread recipes.
+> See the formula behind your bread recipes.
 
 3. Exact supporting line:
 
-> Review the numbers. Scale with confidence.
+> Trust the numbers and scale with confidence.
 
 4. Animated transformation card loop:
 
