@@ -1,0 +1,148 @@
+# Current Rork Task — First-Session Trust Glimpse
+
+Paste/use this as the next Rork Max instruction after connecting this repo.
+
+## Objective
+
+Redesign OpenCrumb’s first-session formula preview / aha moment so it feels like a **glimpse** of a written bread recipe being turned into a trustworthy baker’s formula.
+
+This is the highest-priority screen. Do not broaden the product.
+
+## Required reading before changing screens
+
+Read these files in this repo first:
+
+- `RORK_PROMPT.md`
+- `PRODUCT_BRIEF.md`
+- `SCREEN_FLOW.md`
+- `GUARDRAILS.md`
+- `MOCK_DATA.md`
+- `BBGA_FORMULA_FORMAT.md`
+- `HAMELMAN_FORMULA_HERO.md`
+- `RORK_WORKFLOW.md`
+
+## Product truth
+
+OpenCrumb is an iPhone-only SwiftUI app for serious home bakers.
+
+It turns messy bread recipes into organized, scalable baker’s-percentage formulas.
+
+The R1.0 loop is deliberately narrow:
+
+```text
+Import → Formula → Scale
+```
+
+The aha moment is:
+
+> My real recipe just became an organized, believable formula I might trust for my next bake.
+
+## What to build / revise
+
+Create or revise the first-session preview so one glance communicates:
+
+```text
+written recipe excerpt → extracted structure/checks → professional formula rows
+```
+
+This should be a compact, native SwiftUI, infographic-like transformation surface.
+
+Do **not** show only a finished formula card dumped on screen. The user needs to see why the result is trustworthy.
+
+## Visual direction
+
+Use a calm, serious-baker visual metaphor:
+
+1. **Source recipe excerpt**
+   - clipped prose from a real bread recipe
+   - include source quantities visibly
+   - should feel like the written document the baker started with
+
+2. **Extraction/check layer**
+   - subtle checkmarks, mapping, chips, or row highlights
+   - examples: “flour found”, “water found”, “levain stage detected”, “review needed”
+   - no AI magic language
+
+3. **Formula preview rows**
+   - clean formula rows with weights and baker’s percentages
+   - visually the payoff, but still connected to the source
+
+## Trust copy that must be visible
+
+Include trust messaging in the preview itself, not hidden in a footer or later screen:
+
+- Source quantities stay visible
+- Review every number before saving
+- Unclear amounts are flagged, not guessed
+- No account. No tracking. Your formulas stay on this iPhone.
+
+Use serious, restrained language.
+
+## Formula rules
+
+Visible formula data must remain mathematically plausible and consistent with the mock data:
+
+- Overall Formula uses total-flour baker’s percentages.
+- Levain Build uses build percentages and may show `Levain total 400g 200%`.
+- Final Dough uses weights only.
+- Use `Flour`, not a conflicting `Bread flour` label.
+- Do not show impossible `0g` component rows.
+- Do not invent fake precision.
+- Do not double-count levain.
+
+## Design feel
+
+The screen should feel:
+
+- calm
+- precise
+- native iPhone
+- trustworthy
+- useful rather than decorative
+- professional enough for serious home bakers
+
+It should not feel like:
+
+- AI chat
+- generic recipe manager
+- meal planner
+- SaaS dashboard
+- neon AI app
+- marketing carousel with hollow feature bullets
+
+## Interaction guidance
+
+Prefer a simple transition or progressive reveal:
+
+- source excerpt settles in
+- extraction/check states appear subtly
+- formula rows resolve into place
+
+Keep motion restrained and Apple-like. No magic wand / sparkle gimmick.
+
+## Primary CTA
+
+Use:
+
+> Save Formula
+
+Secondary:
+
+> Edit Before Saving
+
+Small support copy:
+
+> Check the numbers before your next bake.
+
+## Acceptance checklist
+
+The result is acceptable only if a serious baker can look at the screen and immediately understand:
+
+- this started as written recipe prose
+- OpenCrumb extracted structure from it
+- the output is a baker’s formula
+- the user can review before saving
+- questionable amounts are not guessed
+- the app is local-first/no-account/no-tracking
+
+If any of those are missing, revise before stopping.

@@ -50,6 +50,7 @@ If Rork asks for repo access, this repo is safe to use because it contains only 
 - [`HAMELMAN_FORMULA_HERO.md`](HAMELMAN_FORMULA_HERO.md) — formula-first hero layout guidance
 - [`SCREEN_FLOW.md`](SCREEN_FLOW.md) — target first-run and aha flow
 - [`RORK_WORKFLOW.md`](RORK_WORKFLOW.md) — recommended Hermes/Rork iteration workflow and prompt pattern
+- [`CURRENT_RORK_TASK.md`](CURRENT_RORK_TASK.md) — current narrow task for the next Rork Max iteration
 
 ## Source of truth warning
 
