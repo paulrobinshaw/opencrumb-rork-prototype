@@ -154,7 +154,7 @@ Salt         20g
 All levain  400g
 ```
 
-Levain Build may use build-relative percentages if the column is labelled `Build %`. For a 100% hydration levain, bread flour is `100%` and water is `100%` within the levain build.
+Levain Build may use build-relative percentages if the column is labelled `Build %`. For a 100% hydration levain, flour is `100%` and water is `100%` within the levain build.
 
 Do **not** put baker’s percentages in Final Dough rows. That makes the display look like it is mixing formula percentage logic with mixing-stage instructions.
 

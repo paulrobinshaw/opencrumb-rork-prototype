@@ -102,7 +102,7 @@ Scale to 2,400g total dough
 Scale by ingredient constraint:
 
 ```text
-I have 1,000g bread flour
+I have 1,000g flour
 ```
 
 Rebase after mis-weigh:

@@ -85,6 +85,7 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
    - include source quantities visibly
    - should feel like the written document the baker started with
    - use light website/article cues: source domain, tiny masthead/browser bar, serif article title, short dek, paragraphs, ingredient quantities, and optionally a subtle bread/crumb image or warm photo block
+   - visible ingredient labels should use `flour`, not `bread flour`, so the source and formula terminology stay consistent
    - improve realism without making the card busy; the user should read “real recipe page” instantly
    - bottom edge should be subtly ragged / torn-paper style so it feels like a glimpse from a longer page, not a complete document
 
@@ -100,7 +101,8 @@ Use a calm, serious-baker visual metaphor built around **two same-size cards occ
 
 3. **Transition / overlay idea**
    - run the overlay in a restrained timed loop, not as a one-off static mock
-   - suggested loop: web page / recipe text settles in → real `Recipe Found` chip appears → formula preview resolves in-place → animated transition back to the web page state → repeat
+   - suggested loop: web page / recipe text settles in → source quantities highlight in sequence (`200g flour`, then `200g water`, then `800g flour`) → real `Recipe Found` chip appears → formula preview resolves in-place → animated transition back to the web page state → repeat
+   - the quantity highlights should feel like OpenCrumb is finding the ingredients in the source page before resolving the formula; use restrained warm highlight marks, not neon scan effects
    - use a crossfade, vertical wipe, peel/reveal, or stacked overlay where the formula appears in-place over the original recipe text
    - avoid side-by-side comparison if it makes the screen feel like a diagram; the stronger idea is **same card, transformed**
    - keep motion restrained and Apple-like

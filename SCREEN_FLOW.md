@@ -29,10 +29,10 @@ This is the first view a user sees. Use this exact order:
 4. Animated transformation card loop:
 
 ```text
-web page / recipe text → Recipe Found chip → formula preview → transition back → repeat
+web page / recipe text → highlight 200g flour → highlight 200g water → highlight 800g flour → Recipe Found chip → formula preview → transition back → repeat
 ```
 
-The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a credible clipped web recipe page, with light website/article cues and optionally a subtle bread image/background. The formula state should resolve in-place over the same card footprint, with enough rows to feel like a real worksheet and lower rows allowed to spill/crop beneath the torn edge. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page. The `Recipe Found` chip should be an overlay badge; never leave empty reserved whitespace where the chip used to sit.
+The loop should use two same-size overlaid cards in the same footprint. The source state should feel like a credible clipped web recipe page, with light website/article cues and optionally a subtle bread image/background. Source quantities should highlight in sequence before the formula appears: `200g flour`, `200g water`, then `800g flour`. Use `flour`, not `bread flour`, in the visible source/formula labels so the formula terminology stays consistent. The formula state should resolve in-place over the same card footprint, with enough rows to feel like a real worksheet and lower rows allowed to spill/crop beneath the torn edge. Use a slightly bolder, intentionally jagged torn-paper bottom edge so it reads as a glimpse from a longer page. The `Recipe Found` chip should be an overlay badge; never leave empty reserved whitespace where the chip used to sit.
 
 5. Compact trust line:
 
