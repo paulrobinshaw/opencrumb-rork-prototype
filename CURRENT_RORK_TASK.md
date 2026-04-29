@@ -51,21 +51,33 @@ Do **not** show only a finished formula card dumped on screen. The user needs to
 
 ## Visual direction
 
-Use a calm, serious-baker visual metaphor:
+Use a calm, serious-baker visual metaphor built around **two same-size cards occupying the same footprint**:
 
-1. **Source recipe excerpt**
-   - clipped prose from a real bread recipe
+1. **Website recipe card**
+   - looks like a clipped piece of written recipe text from a blog post
+   - same width/height as the formula card
    - include source quantities visibly
    - should feel like the written document the baker started with
+   - bottom edge should be subtly ragged / torn-paper style so it feels like a glimpse from a longer page, not a complete document
 
-2. **Extraction/check layer**
-   - subtle checkmarks, mapping, chips, or row highlights
-   - examples: “flour found”, “water found”, “levain stage detected”, “review needed”
-   - no AI magic language
-
-3. **Formula preview rows**
+2. **Formula card**
+   - same width/height as the website recipe card
+   - aligned exactly over the same card footprint
    - clean formula rows with weights and baker’s percentages
    - visually the payoff, but still connected to the source
+   - can share the same ragged/torn bottom edge treatment if it reinforces the “glimpse” idea
+
+3. **Transition / overlay idea**
+   - the website recipe card should visually transition into the formula card
+   - use a crossfade, vertical wipe, peel/reveal, or stacked overlay where the formula appears in-place over the original recipe text
+   - avoid side-by-side comparison if it makes the screen feel like a diagram; the stronger idea is **same card, transformed**
+   - keep motion restrained and Apple-like
+
+4. **Detection layer**
+   - add a green chip near the source card: `Recipe found`
+   - include a subtle pretend pointer/cursor/tap indicator aimed at the detected recipe area or the `Preview Formula` action
+   - examples of understated extraction states: “flour found”, “water found”, “levain stage detected”, “review needed”
+   - no AI magic language
 
 ## Trust copy that must be visible
 

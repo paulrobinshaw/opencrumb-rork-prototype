@@ -153,9 +153,14 @@ Suggested microcopy for this transformation surface:
 
 Visual metaphor direction:
 
-- left side or top: clipped recipe text excerpt from a real bread recipe
-- middle: subtle extraction, mapping, or check states
-- right side or bottom: clean formula rows with weights and baker's percentages
+- use two same-size cards occupying the same footprint: a website recipe-text card and a formula card
+- the website card transitions into the formula card in-place using a restrained crossfade, wipe, peel, or overlay reveal
+- the cards should feel exactly aligned, not like two unrelated panels
+- the bottom edge can be subtly ragged / torn-paper style so the user reads it as a glimpse from a longer recipe document
+- add a green `Recipe found` chip near the source recipe card
+- include a subtle pretend pointer/cursor/tap indicator aimed at the detected recipe area or preview action
+- left/top state: clipped recipe text excerpt from a real bread recipe with source quantities visible
+- transformed state: clean formula rows with weights and baker's percentages
 
 Avoid:
 
